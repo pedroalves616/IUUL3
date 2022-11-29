@@ -9,6 +9,16 @@ namespace ATV1
     internal class ValidaCliente
     {
 
+        public String ValidaNOME(string nome)
+        {
+            while (nome.Length < 5)
+            {
+                Console.WriteLine("inserir nome de pelo menos 5 caracteres: ");
+                nome = Console.ReadLine();
+            }
+            return nome;
+        }
+
         private static bool IsCpf(string cpf)
         {
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -44,6 +54,8 @@ namespace ATV1
             digito = digito + resto.ToString();
             return cpf.EndsWith(digito);
         }
+
+
 
 
     }

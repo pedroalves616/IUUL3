@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATV3
+namespace ATV4
 {
-    internal class Armstrong
+    public class GenericList<T>
     {
-            protected internal int numero;
-        
+        public void Add(T input) { }
     }
 }

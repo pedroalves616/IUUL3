@@ -27,6 +27,7 @@ namespace ATV1
             if (validador !=null )
             {
                 //erros
+                Console.WriteLine("Erro : ");
             }
             if (validador ==null)
             {

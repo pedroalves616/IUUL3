@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATV3
+namespace teste
 {
-    internal class ArmstrongForms
+    internal class Controller
     {
-        public string Num { get; private set; }
+        public static void Start()
+        {
+
+            }
+        }
     }
+
 }

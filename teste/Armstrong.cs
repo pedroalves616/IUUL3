@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATV3
+namespace teste
 {
     internal class Armstrong
     {
-            protected internal int numero;
-        
+        protected internal int x;
     }
 }
