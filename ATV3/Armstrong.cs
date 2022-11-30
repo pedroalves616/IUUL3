@@ -9,7 +9,7 @@ namespace ATV3
 {
     internal class Armstrong
     {
-            protected internal int numero;
+           
         
     }
 }

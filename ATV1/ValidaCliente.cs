@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace ATV1
 {
@@ -54,10 +56,49 @@ namespace ATV1
             digito = digito + resto.ToString();
             return cpf.EndsWith(digito);
         }
+        protected float validaRenda(string renda)
+        {
 
 
+            if (renda.Contains(','))
+            {
+                Console.WriteLine("Renda validada");
+                renda = Console.ReadLine();
+            }
+            float rendaValidada = float.Parse(renda);
+            if (rendaValidada > 0)
+            {
+                Console.WriteLine("Renda validada");
+                renda = Console.ReadLine();
+            }
+
+            return (rendaValidada);
 
 
+        }
+        protected DateTime ValidaDataNascimento(string dt)
+        {
+            DateTime dataEmDateTime = DateTime.ParseExact(dt, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
+
+            return DateTime.Parse(dt);
+
+        }
+        protected char ValidaEstadoCivil(string estadocivil)
+        {
+        validaEstado:
+            if (estadocivil == "C" || estadocivil == "S" || estadocivil == "V" || estadocivil == "D")
+            {
+                Console.WriteLine("Estado civil  validado");
+            }
+            else
+            {
+                Console.WriteLine("Estado civil não validado");
+                estadocivil = Console.ReadLine();
+                goto validaEstado;
+            }
+            return char.Parse(estadocivil);
+
+        }
     }
 }
 

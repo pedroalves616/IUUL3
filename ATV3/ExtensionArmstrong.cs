@@ -8,7 +8,7 @@ namespace ATV3
 {
     internal static class ExtensionArmstrong
     {
-        internal static bool IsArmstrong(int x) 
+        public static bool IsArmstrong(int x) 
         {
             int Potencia(int x, long y)
             {
@@ -46,3 +46,6 @@ namespace ATV3
         }
     }
 }
+
+
+//referencias https://www.macoratti.net/19/02/c_armstr1.htm

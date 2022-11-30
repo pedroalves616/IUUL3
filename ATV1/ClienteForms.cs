@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.IO;
+using Newtonsoft.Json;
+using DocumentFormat.OpenXml.Drawing.Diagrams;
 
 namespace ATV1
 {
@@ -67,6 +71,10 @@ namespace ATV1
                 Dependentes = Console.ReadLine();
 
             }
+            //lendo json test
+            StreamReader r = new StreamReader("clientes.json");
+            string jsonString = r.ReadToEnd();
+            DataModel m = JsonConvert.DeserializeObject<DataModel>(jsonString);
 
 
         }
