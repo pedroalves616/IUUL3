@@ -14,7 +14,7 @@ namespace ATV1
             while (nome.Length < 5)
             {
                 Console.WriteLine("inserir nome de pelo menos 5 caracteres: ");
-                nome = Console.ReadLine();
+                //nome = Console.ReadLine();
             }
             return nome;
         }
